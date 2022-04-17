@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./button.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title">MEMORY GAME</div>
+      <div class="description">
+        There a total of 3 levels and each one is accessible after you pass the
+        current level.
+      </div>
+      <div class="score-container">
+        <div class="best-time-container">
+          Best Time: <span id="best-time">No Info</span>
+        </div>
+      </div>
+      <div class="grid-container">
+        <!-- <button id="start-button" onclick="startGame()">Start Game</button> -->
+        <div>
+          <button class="cybr-btn" id="start-button" onclick="startGame()">
+            Start Game<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">
+              Start Game_
+            </span>
+            <span aria-hidden class="cybr-btn__tag">
+              R25
+            </span>
+          </button>
+        </div>
+        <div id="grid"></div>
+        <div id="game-over">
+          <!-- <div class="">hey</div>
+          <div class="">bye</div> -->
+        </div>
+        <!-- <button id="restart-button" onclick="restartGame()">
+          Restart Game
+        </button> -->
+        <div>
+          <button class="cybr-btn" id="restart-button" onclick="restartGame()">
+            Restart Game<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">
+              Restart Game_
+            </span>
+            <span aria-hidden class="cybr-btn__tag">
+              R25
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="time-container">
+        <div class="current-time">00:00</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
